@@ -1,17 +1,25 @@
 {
   "users": [
     {
-      "id": 1,
-      "nombre": "Adrian",
-      "email": "email@hotmail.com",
-      "password": "123456"
+      "nombre": "Adrian Reyes",
+      "email": "admin@hotmail.com",
+      "password": "123456789",
+      "id": 1
     },
     {
-      "id": 2,
-      "nombre": "AdrianR",
-      "email": "email2@hotmail.com",
-      "password": "654321"
+      "email": "admin@hotmail.com",
+      "password": "123456789",
+      "id": 2
+    },
+    {
+      "email": "admin@hotmail.com",
+      "password": "admin",
+      "id": 3
+    },
+    {
+      "email": "admin@hotmail.com",
+      "password": "123456789",
+      "id": 4
     }
-    
   ]
 }

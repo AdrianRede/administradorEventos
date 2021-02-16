@@ -11,27 +11,27 @@
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* background-color: aqua; */
 }
 
 h1 {
-    font-size: 3.6rem;
+    font-size: 3rem;
     margin: 0;
 }
 
 h2 {
-    font-size: 3rem;
-    margin: 0;
-}
-h3 {
     font-size: 2.4rem;
     margin: 0;
 }
-h4 {
+h3 {
     font-size: 1.8rem;
+    margin: 0;
+}
+h4 {
+    font-size: 1.2rem;
     margin: 0;
 }
 .container {
@@ -128,3 +128,33 @@ h4 {
   }
 
 
+  .alerta {
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    font-family: var(--headingFont);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  @media (min-width:768px) {
+    .alerta {
+        width: auto;
+        top: 30px;
+        right: 10px;
+        left: auto;
+    }
+  }
+  
+  .alerta-ok {
+    background-color: rgb(109, 211, 109);
+    color: rgb(2, 103, 2);
+  }
+  .alerta-error {
+    background-color: rgb(230, 78, 78);
+    color: var(--blanco);
+  }

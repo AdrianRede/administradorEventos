@@ -16,16 +16,16 @@ const Login = (props) => {
     const { mensaje, autenticado, iniciarSesion } = authContext;
 
       // En caso de que el password o usuario no exista
-     /*useEffect(() => {
+     useEffect(() => {
         if(autenticado) {
-            props.history.push('/users');
+            props.history.push('/user');
         }
 
         if(mensaje) {
             mostrarAlerta(mensaje.msg, mensaje.categoria);
         }
         // eslint-disable-next-line
-    }, [mensaje, autenticado, props.history]);*/
+    }, [mensaje, autenticado, props.history]);
  
     // State para iniciar sesión
     const [usuario, guardarUsuario] = useState({
@@ -60,15 +60,15 @@ const Login = (props) => {
 
 
     return ( 
-        <div className="form-usuario" onSubmit={onSubmit}>
+        <div className="form-usuario">
 
-
+           
 
             <div className="contenedor-form sombra-dark">
                 <h1>Iniciar Sesión</h1>
 
                 <form
-                    
+                     onSubmit={onSubmit}
                 >
                     <div className="campo-form">
                         <TextField
@@ -112,6 +112,8 @@ const Login = (props) => {
                        
                     </div>
                 </form>
+
+                { alerta ? ( <div className={`alerta ${alerta.categoria}`}> {alerta.msg} </div> )  : null }
 
                 <Link 
                     to='/nueva-cuenta'
